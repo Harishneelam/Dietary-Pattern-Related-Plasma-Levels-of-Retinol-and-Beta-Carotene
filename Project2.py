@@ -116,7 +116,7 @@ st.title(
     ## Dietary Pattern-Related Plasma Levels of Retinol and Beta-Carotene.
     """
 )
-st.image(Img)
+
 
 with st.sidebar:
     tab1, tab2, tab3 = st.tabs(["Introduction", "Data Analysis", "Machine Learning"])
@@ -141,6 +141,7 @@ with st.sidebar:
     example4("")
     example3("Author:  Harish Neelam")
     example4("Email:   harineelam10@gmail.com")
+st.image(Img)
 example('Introduction')
 if(Ar == "Description"):
     example2(" Description:  ")
