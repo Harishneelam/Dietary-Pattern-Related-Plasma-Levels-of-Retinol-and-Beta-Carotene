@@ -141,9 +141,10 @@ with st.sidebar:
     example4("")
     example3("Author:  Harish Neelam")
     example4("Email:   harineelam10@gmail.com")
-st.image(Img)
-example('Introduction')
+
 if(Ar == "Description"):
+    st.image(Img)
+    example('Introduction')
     example2(" Description:  ")
     st.write("""
 - Some Research studies has revealed that low plasma concentrations of retinol, beta-carotene, or other carotenoids may be linked to a higher risk of developing certain forms of cancer.
@@ -153,6 +154,7 @@ if(Ar == "Description"):
 """)
 
 if(Ar == "Data set Information"):
+    example('Introduction')
     example2("Data set Information:")
     with st.expander("Data set Information:"):
         st.write(""" 
@@ -163,6 +165,7 @@ if(Ar == "Data set Information"):
     st.dataframe(pdata)
 
 if(Ar == "Variables of the Dataset"):
+    example('Introduction')
     example2("Variables of the Dataset:")
     st.markdown("""
     
